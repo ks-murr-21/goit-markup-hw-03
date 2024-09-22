@@ -76,8 +76,7 @@ img {
 .header {
   height: 72px;
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .nav-logo {
@@ -177,8 +176,6 @@ img {
 /* ==================== HERO STYLES ==================== */
 .hero {
   background-color: #2e2f42;
-  width: 1440px;
-  height: 600px;
   padding: 188px 0;
 }
 
@@ -190,12 +187,9 @@ img {
   text-align: center;
   color: #fff;
   max-width: 496px;
-}
-
-.hero-container-button {
-  padding-top: 48px;
-  padding-left: 164px;
-  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -216,14 +210,15 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
-  padding-top: 16px;
-  padding-left: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #404bbf;
+  cursor: pointer;
 }
 /* ==================== / HERO STYLES ==================== */
 
@@ -319,7 +314,12 @@ width: calc((100% - 72px) / 4);
 }
 /* ==================== / TEAM STYLES ==================== */
 
-/* ==================== PORCTFOLIO STYLES ==================== */
+/* ==================== PORTFOLIO STYLES ==================== */
+
+.section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .portfolio-title {
   font-weight: 700;
@@ -328,10 +328,11 @@ width: calc((100% - 72px) / 4);
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+  padding-top: 120px;
 }
 
 .portfolio-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -343,14 +344,18 @@ width: calc((100% - 72px) / 4);
 
 }
 
+.portfolio-wrapper {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
 .portfolio-caption {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .portfolio-desc {
@@ -392,6 +397,7 @@ width: calc((100% - 72px) / 4);
   text-transform: uppercase;
   color: #f4f4fd;
   text-decoration: none;
+  display: inline-block;
 }
 
 .footer-desc {
